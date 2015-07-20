@@ -1,99 +1,94 @@
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <!-- Modal header -->
-            <div class="modal-header">
-                <h3>Transcribing the Worthington Smith notebooks</h3>
+<div id="modal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
 
-            </div>
+			<div class="modal-header">
+				<h3 class="lead">Japanese Rice Statistics Tutorial <br>日本の稲作統計転記チュートリアル</h3>
+			</div>
 
-            <!-- Step 1 of the tutorial -->
-            <div id="0" class="modal-body" style="display:none">
-                <p>This application is very simple and is a transcription based exercise. Our team would like you to
-                write down exactly what you see on each line of the notepad into the table displayed below the zooming image.</p>
+			<div id="0" class="modal-body" style="display:none">
 
-                <p>Each entry in the note book is similar, 7 fields:</p>
-                <ol>
-                    <li>Entry number</li>
-                    <li>Date of discovery</li>
-                    <li>Description of the discovery</li>
-                    <li>Length in inches</li>
-                    <li>Width in inches</li>
-                    <li>Weight in pounds</li>
-                    <li>Weight in ounces</li>
-                </ol>
-            </div>
+				<p>
+					This application is very simple. When you
+					participate, the platform will load a scanned table of statistical
+					data referring to rice production across Japan in the years 1883-1954. Once the image has been loaded, you will be asked
+					to transcribe the contents of the table(s) you see in the image. Any further
+					information can be placed in the top row, the bottom row or an
+					extra final column. If you can read and write Japanese then please add these headings (with an English translation alongside if you can). If you cannot read Japanese then transcription of the numerical data will still be very useful (as the headings are standardised and we can add them later). 
+					An example portion of a statistical table is provided below, 
+					along with brief description of the contents of the Japanese headings.
+				</p>
+				<p>
+					データの転記作業はシンプルです。このプロジェクトに参加すると、このシステムは1883年から1954年にかけての日本における稲作統計表のスキャン画像を読み込みます。画像が読み込まれると、画像にある統計表の内容を転記するように表示されます。統計表の最上段、最下段あるいは先頭列には、いくらかの情報が含まれていることがあります。日本語を書くことができる方は、そうした情報の（可能であれば英訳の併記も含め）も追加してください。日本語を読むことができない方であっても、数値データの転記も我々にとっては有益なものとなります（ヘッダー情報に関しては後に正規化して付け加えます）。以下には、内容に関する簡単な記述例として統計表の一部が例として示されています。
+				</p>
 
-            <!-- Step 2 of the tutorial -->
-            <div id="1" class="modal-body" style="display:none">
-                <p>
-                    The image that we would like you to transcribe for us, starts at the top of the page and can be scrolled
-                    up and down, and zoomed in and out to read more of the contents. We hope that this interface allows you to
-                    work on the image concurrently with the text table below the image container.
-                </p>
+				<img src="http://micropasts-other.s3.amazonaws.com/other/japanrice_example.png" class="img-polaroid"
+				alt="An example of a rice production table" width="300" height="215"/>
+			</div>
+			<div id="1" class="modal-body" style="display:none">
+				<p>
+					Some further bits of guidance as you transcribe:
+					<ul>
+						<li>
+							The number of rows will expand as you type. Please do not worry if you leave a blank final row.
+							If a word is hard to decipher, do you best to identify it
+							and make a comment in your extra column to note
+							the problem. We have also split each sheet into two (with ovrelap), 
+							so do not be surprised if you see a lack of headings and ignore any numbers/lines that are partially cut off.
+						</li>
+						<li>
+							If you find it easier, you can transcribe into
+							an offline spreadsheet and then copy-and-paste
+							the results into the online table in one go. However, bear in mind that
+							a delay in submitting the online table
+							might then mean that other
+							contributors complete this task before you do and
+							thereby make your efforts unnecessary!
+						</li>
+						<li>For header lines where only one or two columns are used rather than a whole table, please place these entries in the first cell of the spreadsheet row.</li>
+					</ul>
+				</p>
+				<p>転記の際の注意事項:
+					<ul>
+						<li>行数については、入力を進めていくと自動的に追加されます。最終行が空白のままであることは問題ありません。判別が困難な文字や数字が合った場合には、最も妥当な判断で入力し、そうした問題に関するコメントを余分に用意した列に記入してください。統計表は二つに重ねて分割していますので、ヘッダー行が欠損していても驚かず、数値や行が切れてしまっていても無視して作業をおこなってください。</li>
+						<li>簡単であると考えられる場合には、オフラインの表計算ソフトを使って転記し、その結果をコピー・アンド・ペーストでオンライン・テーブルに貼り付けることができます。しかしながら、データの提出が遅れた場合、他の協力者の方がそのタスクを完了させてしまっているかもしれません。その場合には、努力は水の泡となります！</li>
+						<li>表全体とは異なり、ヘッダー（表の項目名）では二つのカラム（列）が使用されている部分があるため、スプレッドシートの行の最初のセルにこれらの記入事項を配置してください。</li>
+					</ul>
+				</p>
+			</div>
 
-                <p>
-                    The table starts off with just 6 rows but will add another automatically when you get to the bottom, up
-                    to a maximum of 20 rows.
-                </p>
-
-                <p>
-                    The image is contained within an interface that allows you to zoom in and out, and even go full screen.
-                    Try the controls out, you won't break anything!
-                </p>
-            </div>
-
-            <!-- Step 2 of the tutorial -->
-            <div id="2" class="modal-body" style="display:none">
-                <p>
-                    As in the Bronze Age index transcription applications, some abbreviations are used. If you see the sign in the image below, it means 'ditto'.
-                    So please enter the same as the previous line's entry.
-                </p>
-                <img src="http://micropasts.org/wp-content/uploads/2015/03/MicroPasts-·-Project-Transcribing-the-Worthington-George-Smith-catalogue-·-Contribute.png">
-                <p>
-                    As this is an antiquarian notebook, the measurements are not metric and are in imperial measures. When transcribing, do not
-                    attempt to convert the weights or dimensions. Instead please just enter as seen. If you see 3 1/4, then please enter as such.
-                    The project team will do the conversions.
-                </p>
-            </div>
-            <!-- End of stepped modal body -->
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn btn-default">Previous</a>
-                <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-success">Next</a>
-                <button id="startContrib" data-dismiss="modal" class="btn btn-primary" style="display:none"/>
-                <i class="glyphicon glyphicon-thumbs-up"></i> Let's start!</a>
-            </div>
-        </div>
-    </div>
+			<div class="modal-footer">
+				<a id="prevBtn" href="#" onclick="showStep('prev')" class="btn btn-default">Previous</a>
+				<a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-success">Next</a>
+				<a id="startContrib" href="../JapanAirTemp/newtask" class="btn btn-primary" style="display:none"><i class="glyphicon glyphicon-thumbs-up"></i> Let's start!</a>
+			</div>
+		</div>
+	</div>
 </div>
 
-
 <script>
-    var step = -1;
-    function showStep(action) {
-        $("#" + step).hide();
-        if (action == 'next') {
-            step = step + 1;
-        }
-        if (action == 'prev') {
-            step = step - 1;
-        }
-        if (step == 0) {
-            $("#prevBtn").hide();
-        }
-        else {
-            $("#prevBtn").show();
-        }
+	var step = -1;
+	function showStep(action) {
+		$("#" + step).hide();
+		if (action == 'next') {
+			step = step + 1;
+		}
+		if (action == 'prev') {
+			step = step - 1;
+		}
+		if (step == 0) {
+			$("#prevBtn").hide();
+		} else {
+			$("#prevBtn").show();
+		}
 
-        if (step == 3 ) {
-            $("#nextBtn").hide();
-            $("#startContrib").show();
-        }
-        $("#" + step).show();
-    }
+		if (step == 1) {
+			$("#nextBtn").hide();
+			$("#startContrib").show();
+		}
+		$("#" + step).show();
+	}
 
-    showStep('next');
-    $("#modal").modal('show');
+	showStep('next');
+	$("#modal").modal('show'); 
 </script>
