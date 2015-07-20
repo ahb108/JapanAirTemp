@@ -297,12 +297,14 @@ Modernizr.load({
                 var data = [[]];
                 var config = {
                 data: data,
+                minRows: 32,
+                minCols: 26,
                 minSpareRows: 1,
                 minSpareCols: 0,
                 autoWrapRow: true,
                 autoWrapCol: true,
                 autoColumnSize: true,
-                colHeaders: ['Day','1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12noon', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm','10pm','11pm','12md'],
+                colHeaders: ['Day','1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12noon', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm','10pm','11pm','12md','Mean'],
                 contextMenu: ['row_below', 'remove_row', 'undo', 'redo'],
                 stretchH: 'all'
                 };
