@@ -81,7 +81,7 @@
     <div class="row">
         <h4>Transcribe the table shown in the scanned image into the empty cells below. <br>
 			この画像の表のデータを転記してください。</h4>
-        <div id="riceTranscribe" class="handsontable"></div>
+        <div id="weatherTrans" class="handsontable"></div>
         <button class="btn btn-success btn-answer" value='Yes'>Submit the transcription /「転記結果の提出</button>
         <!-- Feedback items for the user -->
         <p>You are working now on task (現在作業中のタスク): <span id="task-id" class="label label-warning">#</span></p>
@@ -297,18 +297,18 @@ Modernizr.load({
                 var data = [[]];
                 var config = {
                 data: data,
-                minRows: 6,
-                minCols: 11,
+                minRows: 32,
                 minSpareRows: 1,
                 minSpareCols: 0,
                 autoWrapRow: true,
                 autoWrapCol: true,
                 autoColumnSize: true,
-                colHeaders: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'],
+                colHeaders: ['Day','1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12noon', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm','10pm','11pm','12md'],
+                rowHeaders: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','Mean']
                 contextMenu: ['row_below', 'remove_row', 'undo', 'redo'],
                 stretchH: 'all'
                 };
-                $("#riceTranscribe").handsontable(config);
+                $("#weatherTrans").handsontable(config);
 
 
                 $('.btn-answer').off('click').on('click', function(evt) {
@@ -317,7 +317,7 @@ Modernizr.load({
                 if (typeof answer != 'undefined') {
                     task.answer = $("#transcription").serializeJSON();
                     console.log(task.answer);
-                    var handsontable = $("#riceTranscribe").data('handsontable');
+                    var handsontable = $("#weatherTrans").data('handsontable');
                     var data = handsontable.getData();
                     console.log(data);
                     task.answer = data;
@@ -363,7 +363,7 @@ Modernizr.load({
     .ol-rotate {
     top: 3em;
     }
-    #riceTranscribe {
+    #weatherTrans {
     width: 100%;
     }
     .btn-answer {
