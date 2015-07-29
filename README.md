@@ -1,11 +1,13 @@
-Crowd-sourcing application for Japanese historical climatological data  日本における気候変化データのためのクラウド・ソーシング・プロジェクト
+Crowd-sourcing application for Japanese historical climatological data
 ================================
+日本における気候変化データのためのクラウド・ソーシング・プロジェクト
+-------------------------------
 
 
-
-LICENSE  ライセンス
+LICENSE 
 =======
-
+ライセンス
+-------
 Please, see the COPYING file.  
 COPYING をご覧下さい。
 
