@@ -8,5 +8,9 @@ COPYING をご覧下さい。
 
 # Acknowledgments (謝辞)
 
-The thumbnail is from the Portable Antiquities Scheme and shows the Near Lewes hoard.  Image licensed as CC BY-SA. 
+This application builds on a table transcription template first
+developed by Daniel Lombraña González, with further input from Daniel
+Pett. We are also greatful to the  Ministry of Meteorology, Japan for make the
+scanned data openly available. 
+
 
