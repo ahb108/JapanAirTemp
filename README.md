@@ -13,4 +13,4 @@ developed by Daniel Lombraña González, with further input from Daniel
 Pett. We are also greatful to the  Ministry of Meteorology, Japan for make the
 scanned data openly available. 
 
-
+このアプリケーションはDaniel Lombraña Gonzálezが開発した表転記テンプレートにDaniel Pettが手を加えたものです。また、日本の気象庁には、スキャンしたデータをオープンに利用できるようにご配慮を頂きました。
